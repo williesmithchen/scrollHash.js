@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--HTML5-->
+<html lang="zh-Hant-TW" class="no-js">
+    <head>
+        <!--UTF-8-->
+        <meta charset="utf-8" />
+
+        <!--IE=edge:Auto select IE's Edge Mode & Set IE use Chrome Frame-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+        <!--Title-->
+        <title>scrollHash</title>
+
+        <!--Page Content-->
+        <meta name="author" content="willie.smith.chen" />
+        <meta name="description" content="scrollHash.js Demo Page." />
+        <meta name="keywords" content="javascript,scroll,hash" />
+
+        <!--Viewport-->
+        <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1,maximum-scale=1.0,user-scalable=no" />
+
+        <!--favicon-->
+        <link rel="shortcut icon" href="favicon.ico" />
+
+        <!--Head/CDN Script-->
+
+        <!--[if lt IE 9]>
+        <script type="text/javascript" src="html5shiv.min.js"></script>
+        <![endif]-->
+
+        <!--modernizr-->
+        <script type="text/javascript" src="modernizr.js"></script>
+
+        <!--jQuery 2.1.3 & 1.11.2-->
+        <!--[if lt IE 9]>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <![endif]-->
+        <!--[if gte IE 9]><!-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <!--<![endif]-->
+
+        <!--Head/CDN Font-->
+        <link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
+
+        <!--Head/CDN CSS-->
+        <!--CSS Reset-->
+        <link rel="stylesheet" href="CSSReset.min.css">
+
+        <link rel="stylesheet" href="dist/scrollHash.css">
+
+    </head>
+    <body>
+        <!--Body Header/CDN Script-->
+        <!--<script src=""></script>-->
+
+        <!--if user no script-->
+        <noscript>
+            <header>
+                <h1>Oops!</h1>
+                <h2>Your browser does not support JavaScript, we suggest you can open it to get the best experience.</h2>
+            </header>
+        </noscript>
+
+        <!--Header-->
+        <header>
+            <h1>scrollHash.js</h1>
+            <h2>A Applications Sample of location.hash.</h2>
+        </header>
+
+        <!--Main Area-->
+        <main>
+            <div id="HowToUse">
+                <h3>How To Use?</h3>
+                <p>Bind / Add classname "scrollHash" to your element target.</p>
+                <h4>Html:</h4>
+                <p>&lt;div <b>class="scrollHash"</b>&gt;...&lt;/div&gt;</p>
+                <h4>jQuery / javascript:</h4>
+                <p>&lt;script&gt;<br/>$(function(){<br/>&nbsp;&nbsp;&nbsp;&nbsp;wsc.scrollHash();<br/>});<br/>&lt;/script&gt;</p>
+                <h3>Options:</h3>
+                <div class="RWD_Table">
+                    <table class="RWD_Table">
+                        <caption>scrollHash.js : (Options)</caption>
+                        <thead>
+                            <tr>
+                                <th>Options Name</th>
+                                <th>Default Value</th>
+                                <th>Type</th>
+                                <th>Comment</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>scrollHash</th>
+                                <td>true</td>
+                                <td>(Boolean)</td>
+                                <td>When scroll to SHclassName element, change window.Hash.</td>
+                            </tr>
+                            <tr>
+                                <th>clickHash</th>
+                                <td>true</td>
+                                <td>(Boolean)</td>
+                                <td>When click SHclassName element, change window.Hash.</td>
+                            </tr>
+                            <tr>
+                                <th>SHclassName</th>
+                                <td>"scrollHash"</td>
+                                <td>(Boolean)</td>
+                                <td>ScrollHash Target.</td>
+                            </tr>
+                            <tr>
+                                <th>range</th>
+                                <td>50</td>
+                                <td>(Number)</td>
+                                <td>When window scroll Between element's top +Rage -Rage, change window.Hash.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="one" class="scrollHash">One</div>
+            <div id="two" class="scrollHash">2</div>
+            <div id="three" class="scrollHash">三</div>
+            <div id="four" class="scrollHash">IV</div>
+            <div id="five" class="scrollHash">金</div>
+            <div id="six" class="scrollHash">sechs</div>
+            <div id="seven" class="scrollHash">เจ็ด</div>
+        </main>
+
+        <!--Footer-->
+        <footer>
+            <p rel="author">willie.smith.chen@2015.4.8</p>
+        </footer>
+
+        <!--Body Footer/CDN Script-->
+        <script type="text/javascript" src="dist/scrollHash.js"></script>
+    </body>
+</html>

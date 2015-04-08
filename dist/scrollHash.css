@@ -1,0 +1,160 @@
+html, body{
+	font-family: 'Noto Sans', sans-serif;
+
+	background-color: white;
+
+	position: relative;
+	height: 100%;
+	width: 100%;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+	font-size: 16px;
+	line-height:1.5;
+}
+body > *{
+	max-width: 960px;
+	margin:0 auto;
+	padding: 1em;
+}
+/*Header*/
+body > header{
+	text-align: left;
+}
+@media screen and (max-width: 480px) {
+	body > header h1{
+		text-align: right;
+	}
+}
+/*H1 ~ H6*/
+h1 {
+	font-size: 250%;
+	font-weight: bolder;
+}
+h2 {
+	font-size: 200%;
+}
+h3 {
+	font-size: 175%;
+	font-weight: bolder;
+}
+h4 {
+	font-size: 150%;
+}
+h5 {
+	font-size: 133%;
+	font-weight: bolder;
+}
+h6 {
+	font-size: 100%;
+}
+/*Main*/
+body > main {
+	height: auto;
+}
+/*Footer*/
+body > footer{
+	text-align: right;
+}
+main > div:first-child {
+	margin:.5em 0;
+}
+main > div:not(:first-child) {
+	min-height: 100vh;
+	line-height: 100vh;
+	text-align: center;
+	font-size: 5em;
+}
+main > div:first-child p{
+	padding-left: 2em;
+	margin-bottom: .5em;
+}
+b {
+	font-weight: bolder;
+}
+/**
+ * iPad with portrait orientation.
+ */
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait){
+  main > div{
+    height: 1024px;
+  }
+}
+/**
+ * iPad with landscape orientation.
+ */
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape){
+  main > div{
+    height: 768px;
+  }
+}
+/**
+ * iPhone 5
+ * You can also target devices with aspect ratio.
+ */
+@media screen and (device-aspect-ratio: 40/71) {
+  main > div{
+    height: 500px;
+  }
+}
+/*Rainbow*/
+#one {
+	color: black;
+    background-color: #D10000;
+}
+#two {
+	color: black;
+    background-color: #FF6622;
+}
+#three {
+	color: black;
+    background-color: #FFDA21;
+}
+#four {
+	color: black;
+    background-color: #33DD00;
+}
+#five {
+	color: white;
+    background-color: #1133CC;
+}
+#six {
+	color: white;
+    background-color: #220066;
+}
+#seven {
+	color: white;
+    background-color: #330044;
+}
+
+div.RWD_Table,table.RWD_Table,table
+{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    width: 100%;
+    margin:0;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+div.RWD_Table{border: 1px solid #ddd;}
+table.RWD_Table{border-top:1px solid #ddd;}
+caption{ text-align: left; padding-left:1em;}
+thead tr, tr:nth-child(even) {background: #CCC}
+th, td {vertical-align: middle;}
+td {padding-left: 1em;}
+td:not(:last-child){text-align: center;}
+th:not(:last-child){min-width:75px;}
+@media screen and (min-width: 0px) and (max-width: 320px) {
+    section > div:not(.RWD_Table){padding-left: 1em;margin-bottom: .25em;}
+    th:not(:last-child){min-width:75px;}
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    section > div:not(.RWD_Table){padding-left: 2em;margin-bottom: .5em;}
+    th:not(:last-child){min-width:146px;}
+}
+th:last-child{width:auto;}
+th, em, .bold{font-weight: bold;vertical-align: middle;}
