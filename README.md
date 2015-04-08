@@ -2,4 +2,4 @@
 ## Description
 When scroll to a Blaock, then change the location.hash!
 ##Demo Page
-http://williesmithchen.github.io/scrollHash/
+http://williesmithchen.github.io/scrollHash.js/
